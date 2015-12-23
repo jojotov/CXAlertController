@@ -5,7 +5,10 @@ A objective-c util for compatible UIAlertView and UIAlertController
 > For iOS < 8.0, UIAlertView is allowed to use. However, if the iphone version is greater than or equal to iOS8, UIAlertController is recommanded to use.
 
 CXAlertController provide a common method with completion block, the user can use completion block to do different tasks when click the button.
-
+# Screenshot
+![1](https://cloud.githubusercontent.com/assets/8435489/11975630/b7093a6a-a9aa-11e5-92a1-5dd17e3f766f.png)
+![2](https://cloud.githubusercontent.com/assets/8435489/11975632/cb6e0468-a9aa-11e5-9ddd-8504f127b34e.png)
+![3](https://cloud.githubusercontent.com/assets/8435489/11975636/d0961c82-a9aa-11e5-88e1-026ebb5f1f87.png)
 # Usage
 
 ``` objective-c
