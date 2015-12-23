@@ -15,6 +15,9 @@
 		FC4D42BF1C2A8EE100312D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4D42BD1C2A8EE100312D94 /* LaunchScreen.storyboard */; };
 		FC4D42CA1C2A8EE200312D94 /* CXAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4D42C91C2A8EE200312D94 /* CXAlertControllerTests.m */; };
 		FC4D42D51C2A8EE200312D94 /* CXAlertControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4D42D41C2A8EE200312D94 /* CXAlertControllerUITests.m */; };
+		FC4D42E41C2A8F1E00312D94 /* CXAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4D42E31C2A8F1E00312D94 /* CXAlertController.m */; };
+		FC4D42E71C2A8F3A00312D94 /* UIAlertView+CXBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4D42E61C2A8F3A00312D94 /* UIAlertView+CXBlocks.m */; };
+		FC4D42EA1C2A95B800312D94 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4D42E91C2A95B800312D94 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		FC4D42D01C2A8EE200312D94 /* CXAlertControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CXAlertControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4D42D41C2A8EE200312D94 /* CXAlertControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXAlertControllerUITests.m; sourceTree = "<group>"; };
 		FC4D42D61C2A8EE200312D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4D42E21C2A8F1E00312D94 /* CXAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXAlertController.h; sourceTree = "<group>"; };
+		FC4D42E31C2A8F1E00312D94 /* CXAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXAlertController.m; sourceTree = "<group>"; };
+		FC4D42E51C2A8F3A00312D94 /* UIAlertView+CXBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+CXBlocks.h"; sourceTree = "<group>"; };
+		FC4D42E61C2A8F3A00312D94 /* UIAlertView+CXBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+CXBlocks.m"; sourceTree = "<group>"; };
+		FC4D42E81C2A95B800312D94 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		FC4D42E91C2A95B800312D94 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				FC4D42B31C2A8EE100312D94 /* AppDelegate.m */,
 				FC4D42B51C2A8EE100312D94 /* ViewController.h */,
 				FC4D42B61C2A8EE100312D94 /* ViewController.m */,
+				FC4D42E81C2A95B800312D94 /* TableViewController.h */,
+				FC4D42E91C2A95B800312D94 /* TableViewController.m */,
+				FC4D42E21C2A8F1E00312D94 /* CXAlertController.h */,
+				FC4D42E31C2A8F1E00312D94 /* CXAlertController.m */,
+				FC4D42E51C2A8F3A00312D94 /* UIAlertView+CXBlocks.h */,
+				FC4D42E61C2A8F3A00312D94 /* UIAlertView+CXBlocks.m */,
 				FC4D42B81C2A8EE100312D94 /* Main.storyboard */,
 				FC4D42BB1C2A8EE100312D94 /* Assets.xcassets */,
 				FC4D42BD1C2A8EE100312D94 /* LaunchScreen.storyboard */,
@@ -270,7 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4D42E71C2A8F3A00312D94 /* UIAlertView+CXBlocks.m in Sources */,
+				FC4D42EA1C2A95B800312D94 /* TableViewController.m in Sources */,
 				FC4D42B71C2A8EE100312D94 /* ViewController.m in Sources */,
+				FC4D42E41C2A8F1E00312D94 /* CXAlertController.m in Sources */,
 				FC4D42B41C2A8EE100312D94 /* AppDelegate.m in Sources */,
 				FC4D42B11C2A8EE100312D94 /* main.m in Sources */,
 			);
@@ -413,7 +431,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CXAlertController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuxinnet.CXAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +444,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CXAlertController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuxinnet.CXAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +520,7 @@
 				FC4D42DB1C2A8EE200312D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC4D42DC1C2A8EE200312D94 /* Build configuration list for PBXNativeTarget "CXAlertControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +529,7 @@
 				FC4D42DE1C2A8EE200312D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC4D42DF1C2A8EE200312D94 /* Build configuration list for PBXNativeTarget "CXAlertControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +538,7 @@
 				FC4D42E11C2A8EE200312D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
